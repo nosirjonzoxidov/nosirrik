@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Login sahifasi</h1>
+  <form onsubmit="redirectToPage(event)">
+    <label for="username">Foydalanuvchi nomi:</label><br>
+    <input type="text" id="username" name="username" placeholder="Ismingiz"><br><br>
+
+    <label for="password">Parol:</label><br>
+    <input type="password" id="password" name="password" placeholder="Parolingiz"><br><br>
+
+    <button type="submit">Kirish</button>
+  </form>
+
+  <script>
+    function redirectToPage(event) {
+      event.preventDefault(); // Formni yuborishni to'xtatadi
+      window.location.href = "welcome.html"; // Yangi sahifaga yo'naltiradi
+    }
+  </script>
+</body>
+</html>
